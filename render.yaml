@@ -2,5 +2,6 @@ services:
   - type: web
     name: friend-hash
     runtime: python
+    pythonVersion: "3.10"  # Using stable Python version
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app
